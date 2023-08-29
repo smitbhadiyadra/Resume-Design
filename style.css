@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Courier+Prime&family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    width: 3px;
+    background-color: var(--bgColor);
+}
+
+body::-webkit-scrollbar:hover{
+    width: 5px;
+    background-color: var(--borderColor);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--themeColor);
+}
+
+:root{
+    --bgColor: #151515;
+    --themeColor: #b868ff;
+    --borderColor: #B2B2B2;
+    --Allure: 'Allura', cursive;
+    --Grotesque: 'Bricolage Grotesque', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Orbitron: 'Orbitron', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --Ubuntu: 'Ubuntu', sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 9;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--Ubuntu);
+    border: 2px solid var(--borderColor);
+    background: var(--bgColor);
+}
+
+.logo{
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid var(--borderColor);
+    color: #fff;
+    background: transparent;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav h4{
+    width: 5vw;
+    height: 6.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid var(--borderColor);
+    padding: 0 4vw;
+    white-space: nowrap;
+    transition: all ease .5s;
+}
+
+nav h4:hover{
+    background: var(--themeColor);
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bgColor);
+    overflow: hidden;
+}
+
+.page1{
+    position: relative;
+    top: 7vh;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bgColor);
+    border-bottom: 2px solid var(--borderColor);
+    color: #fff;
+}
+
+.page1 .hero{
+    position: relative;
+    left: 2%;
+    width: 95%;
+    height: 100vh;
+    border-left: 2px solid var(--borderColor);
+    border-right: 2px solid var(--borderColor);
+}
+
+
+.details{
+    top: 4vh;
+    position: relative;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2.5vh;
+}
+
+.details>h4{
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: var(--Grotesque);
+    opacity: 0.98;
+}
+
+.details>h1{
+    font-size: 4.5vw;
+    font-weight: 500;
+    font-family: var(--Grotesque);
+    line-height: 1;
+}
+
+.details>p{
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: var(--Grotesque);
+    opacity: 0.8;
+}
+
+.details>button{
+    padding: 1.2vh 1vw;
+    background: var(--themeColor);
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-shadow: #fff 3px 3px 0 0;
+    font-size: 10;
+    font-family: var(--Grotesque);
+    cursor: pointer;
+    transition: all ease .5s;
+    font-weight: 600;
+}
+
+.details>button:hover{
+    background: #fff;
+    color: var(--themeColor);
+    border-radius: 100px;
+    border: 1px solid var(--themeColor);
+    box-shadow: var(--themeColor) 3px 3px 0 0;
+    font-weight: 600;
+}
+
+.page1 .img{
+    width: 90%;
+    height: 35vh;
+    position: relative;
+    margin-top: 7vh;
+    left: 4vw;
+    background: url(code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 2px solid var(--borderColor);
+    box-shadow: var(--borderColor) 6px 8px 0 0;
+}
+
+.page2{
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+    color: #fff;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.page2 .left{
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    border-right: 2px solid var(--borderColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left>h1{
+    font-size: 4.5vw;
+    font-weight: 500;
+    font-family: var(--Grotesque);
+    line-height: 1;
+}
+
+.page2 .right{
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 8vw;
+}
+
+.right>p{
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: var(--Grotesque);
+    opacity: 0.8;
+    margin-bottom: 4%;
+}
+
+.right>button{
+    padding: 1.2vh 1vw;
+    background: var(--themeColor);
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-shadow: #fff 3px 3px 0 0;
+    font-size: 10;
+    font-family: var(--Grotesque);
+    transition: all ease .5s;
+    font-weight: 600;
+}
+
+.right>button:hover{
+    background: #fff;
+    color: var(--themeColor);
+    border-radius: 100px;
+    border: 1px solid var(--themeColor) ;
+    box-shadow: var(--themeColor) 3px 3px 0 0;
+    font-weight: 600;
+}
+
+.page3{
+    position: relative;
+    width: 900vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background: var(--bg--color);
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.page3 .scroll{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    scale: 1.5;
+    animation: move 90s linear infinite;
+}
+
+.page3 .items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-family: var(--Ubuntu);
+    text-transform: uppercase;
+}
+
+.items h1{
+    font-family: var(--Ubuntu);
+    text-transform: uppercase;
+    font-size: 2vw;
+    white-space: nowrap;
+    font-weight: 500;
+    transition: all ease .3s;
+    cursor:default;
+}
+
+.items h1:hover{
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--themeColor);
+    color: var(--bgColor);
+}
+
+.items span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--themeColor);
+    border: 1px solid #fff;
+    display: inline-block;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.page4{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    color: #fff;
+    margin-top: 5vh;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.page4 .heading{
+    display: flex;
+
+    justify-content: center;
+}
+
+.heading span{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: var(--themeColor);
+    border: 1px solid #fff;
+    display: inline-block;
+}
+
+.heading>h1{
+    font-family: var(--Grotesque);
+    font-size: 3vw;
+}
+
+.boxes{
+    width: 100vw;
+    position: relative;
+    top: 7vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxes .box{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+.boxes .box .img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 12px;
+    border: 2px solid var(--borderColor);
+    box-shadow: var(--borderColor) 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.img img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.boxes .box button{
+    cursor: pointer;
+    width: 98%;
+    left: 1%;
+    position: relative;
+    padding: 1.3vh 0;
+    margin-bottom: 10px;
+    background: var(--themeColor);
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-shadow: #fff 3px 3px 0 0;
+    font-size: 10;
+    font-family: var(--Grotesque);
+    transition: all ease .5s;
+    font-weight: 600;
+}
+
+
+.page5{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    color: #fff;
+    margin-top: 5vh;
+    border-bottom: 2px solid var(--borderColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--Montserrat);
+}
+
+.page5 h1{
+    text-transform: uppercase;
+    line-height: .9;
+    letter-spacing: 2px;
+    font-size: 4.8vw;
+    margin-bottom: 4vh;
+}
+
+.page5 span{
+    color: var(--themeColor);
+}
+
+
+.page5 h4{
+    font-size: 1.3vw;
+    letter-spacing: 1.3px;
+}
+
+
+.page7{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    color: #fff;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+}
+
+
+.page7 .box{
+    position: relative;
+    width: 77%;
+    height: 90%;
+    background: var(--themeColor);
+    margin-bottom: 7vh;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: #fff 10px 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Montserrat);
+}
+
+.page7 .box h1{
+    font-size: 4vw;
+    line-height: 1;
+}
+
+.page7 .box p{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.page7 .box>button{
+    padding: 1.2vh 1vw;
+    background: #fff;
+    color: #000;
+    border-radius: 100px;
+    border: 1px solid #000;
+    box-shadow: #000 3px 3px 0 0;
+    font-size: 10;
+    font-family: var(--Grotesque);
+    cursor: pointer;
+    transition: all ease .5s;
+    font-weight: 600;
+}
+
+.page7 .box>button:hover{
+    background: #000;
+    color: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-shadow: #fff 3px 3px 0 0;
+    font-weight: 600;
+}
+
+
+
+
+@media(max-width: 500px){
+
+    header .logo{
+        width: 20%;
+        font-size: 20px;
+    }
+    
+    nav h4{
+        width: 20vw;
+        height: 7vh;
+        font-size: 15px;
+    }
+
+    .page1{
+        height: 81vh;
+        align-items: center;
+        position: relative;
+    }
+
+    .page1 .hero{
+        position: absolute;
+        width: 93%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-left: 2px solid var(--borderColor);
+        border-right: 2px solid var(--borderColor);
+    }
+
+    .page1 h4{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .page1 h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .page1 p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .page1 button{
+        padding: 10px 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .page2{
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .page2 .left{
+        border-right: none;
+        width: 100%;
+        height: 50%;
+        border-bottom: 2px solid var(--borderColor);
+    }
+
+    .page2 .left h1{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .page2 .right{
+        border-right: none;
+        width: 100%;
+        height: 50%;
+        border-bottom: 2px solid var(--borderColor);
+        align-items: center;
+        text-align: center;
+    }
+
+    .page2 .right p{
+        font-size: 15px;
+        align-items: center;
+        margin-bottom: 30px;
+        letter-spacing: 1.5px;
+    }
+
+    .page2 button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .page3{
+        height: 8vh;
+    }
+
+    .page3 h1{
+        font-size: 15px;
+    }
+
+    .page3 span{
+        width: 10px;
+        height: 10px;
+    }
+
+    .page4{
+        height: 160vh;
+    }
+
+    .page4 .heading h1{
+        font-size: 37px;
+    }
+
+    .page4 .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page4 .boxes .box{
+        width: 80%;
+        height: 400px;
+        margin-bottom: 60px;
+    }
+
+    .page4 .boxes .box button{
+        font-size: 16px;
+    }
+
+    .page5{
+        height: 35vh;
+        padding: 200px 0;
+    }
+
+    .page5 h1{
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    .page5 h4{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .page5 p{
+        font-size: 15px;
+    }
+
+    .page5 span{
+        color: var(--themeColor);
+    }
+
+    .page7{
+        height: 50vh;
+    }
+
+    .page7 .box{
+        width: 88%;
+        height: 70%;
+        box-shadow: #fff 3px 3px 0 0;
+    }
+
+    .page7 .box h1{
+        font-size: 30px;
+    }
+
+    .page7 .box p{
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .page7 .box button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
